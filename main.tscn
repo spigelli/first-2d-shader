@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbx7qsy2klr58"]
+[gd_scene load_steps=6 format=3 uid="uid://dbx7qsy2klr58"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_rewjs"]
 [ext_resource type="Texture2D" uid="uid://scl2ghyyij56" path="res://icon.svg" id="2_6dqsr"]
 [ext_resource type="Shader" path="res://first-shader.gdshader" id="2_kyplb"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="4_vl7dr"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xu7uy"]
 shader = ExtResource("2_kyplb")
@@ -15,3 +16,5 @@ material = SubResource("ShaderMaterial_xu7uy")
 position = Vector2(561, 296)
 scale = Vector2(3, 3)
 texture = ExtResource("2_6dqsr")
+script = ExtResource("4_vl7dr")
+blue = 0.7

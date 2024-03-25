@@ -1,14 +1,15 @@
 shader_type canvas_item;
 
+uniform float blue = 1.0;
+
 void vertex() {
 	// Called for every vertex the material is visible on.
 }
 
 void fragment() {
 	// Called for every pixel the material is visible on.
-	// COLOR = vec4(0.4, 0.6, 0.9, 1.0);
 	COLOR = texture(TEXTURE, UV);
-	COLOR.b = 1.0;
+	COLOR.b = blue;
 }
 
 //void light() {
